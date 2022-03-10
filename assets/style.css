@@ -201,7 +201,7 @@ div.one:hover {
 
 .fimg1 {
   width: 50%;
-  height: 493px;
+  height: auto;
 }
 
 .fimg1 img {
@@ -238,7 +238,7 @@ div.one:hover {
 .video {
   padding: 0px 57px 80px 57px;
   margin: 70px 0px 35px 0px;
-  height: 574px;
+  height: 70vh;
   box-sizing: border-box;
   display: flex;
 }
@@ -255,7 +255,74 @@ div.one:hover {
   justify-content: center;
 }
 
-@media screen and (max-width: 1024px) {
+footer {
+  background-color: black;
+}
+
+.footer1 {
+  padding: 35px 58px 35px 58px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.col-1 {
+  width: 13%;
+  height: 514px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 6.7px 0px 6.7px;
+  margin-top: 12px;
+}
+
+.col-1 h4 {
+  color: white;
+  height: 24px;
+  margin: 12px 0px 12px 0px;
+}
+
+.col-1 a {
+  font-size: 12.8px;
+  text-decoration: none;
+  color: #bac0c3;
+  height: 24px;
+  margin: 12px 0px 12px 0px;
+}
+
+.footer2 {
+  padding: 0px 57px 0px 57px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoF {
+  width: 15%;
+  height: 40px;
+  float: left;
+  color: white;
+}
+.footer21 {
+  width: 100%;
+  height: 40px;
+}
+.footer21 span {
+  color: white;
+  width: 25%;
+  height: 40px;
+  float: left;
+  text-align: center;
+  padding-top: 15px;
+  /* padding-bottom: 10px; */
+}
+
+hr {
+  margin: 18px -57px 18px -57px;
+  clear: both;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 425px) {
   .nav-left {
     display: none;
   }
@@ -264,7 +331,6 @@ div.one:hover {
   }
   .search-bar {
     width: 100%;
-    padding-right: 0px;
   }
   .banner {
     flex-direction: column;
@@ -280,7 +346,6 @@ div.one:hover {
   }
   .feature1 {
     flex-direction: column;
-    margin: 0px 0px 105px 0px;
   }
   .content1,
   .fimg1,
@@ -292,12 +357,24 @@ div.one:hover {
     margin: 0px;
     width: 100%;
   }
+  div.pricing > div {
+    width: 50%;
+  }
   .video_bg {
     background-size: cover;
+  }
+  .col-1 {
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 425px) {
+  .col-1 {
+    width: 40%;
+  }
+  div.pricing > div {
+    width: 50%;
+  }
   .nav-left {
     display: none;
   }

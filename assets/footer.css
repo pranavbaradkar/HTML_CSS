@@ -6,9 +6,10 @@ footer {
   padding: 35px 58px 35px 58px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .col-1 {
-  /* width: 13%; */
+  width: 13%;
   height: 514px;
   display: flex;
   flex-direction: column;
